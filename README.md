@@ -1,6 +1,7 @@
 # MSFVenom Cheatsheet
 Single Page Cheatsheet for common MSF Venom One Liners  
 Available in PDF, DOCX and Markdown format!
+*PDF and DOCX versions contain the payload size in bytes and a few more commands.*
 
 
 # MSFVenom Cheatsheet
